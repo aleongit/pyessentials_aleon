@@ -12,6 +12,7 @@ CATEGORIES = [
     'Classics',
     'List Comprehension',
     'Tuples',
+    'Set',
 ]
 
 ESSENTIALS = {
@@ -364,6 +365,13 @@ sortida = [(1,4),(2,2),(3,1)]
 
 11. Troba en quina posició es troba l’element 20:
 aTuple = ("Orange", [10, 20, 30], (5, 15, 25))
+        """,
+    },
+        '81':  {
+        'script': 'py/81.py',
+        'category': CATEGORIES[7],
+        'title': "Set - 7 exercicis amb menú",
+        'text': """
         """,
     },
 }

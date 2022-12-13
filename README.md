@@ -9,6 +9,7 @@ Recopilació d'exercicis essencials Python by aleon.
 - **Classic Algorithms** 51 to 510
 - **List Comprehension** 61
 - **Tuples** 71
+- **Set** 81
 
 
 ## Requeriments
