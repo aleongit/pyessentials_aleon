@@ -8,6 +8,7 @@ Recopilació d'exercicis essencials Python by aleon.
 - **Mastermind** game using loops, conditionals and lists - 41
 - **Classic Algorithms** 51 to 510
 - **List Comprehension** 61
+- **Tuples** 71
 
 
 ## Requeriments

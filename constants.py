@@ -11,6 +11,7 @@ CATEGORIES = [
     'Mastermind',
     'Classics',
     'List Comprehension',
+    'Tuples',
 ]
 
 ESSENTIALS = {
@@ -322,6 +323,48 @@ unString = 'Un string qualsevol que té molts espais'
 
 10.Cercar totes les paraules d’una cadena de menys de 4 lletres.
 """,
+    },
+        '71':  {
+        'script': 'py/71.py',
+        'category': CATEGORIES[6],
+        'title': "Tuples - 11 exercicis amb menú",
+        'text': """1. Crear una tupla nova que sigui la tupla girada (al revés)
+aTuple = (10, 20, 30, 40, 50)
+
+2. Crar una tupla d’un sol element anomenada unSol i amb contingut 50
+
+3. Fer un swap de les següents tuples 2 versions, amb variable auxiliar i directament
+tuple1 = (99, 88)
+tuple2 = (11, 22)
+
+4. Ordena la tupla pel segon element: algorismes treballats (bombolla, nan o inserció)
+tuple1 = (('a', 23),('b', 37),('c', 11), ('d',29))
+sortida esperada (('c', 11), ('a', 23), ('d', 29), ('b', 37))
+
+5. Digues quantes vegades apareix el valor 50 en la tupla, i quin % representa?
+tuple1 = (50, 10, 60, 70, 50)
+
+6. Comprova si tots els ítems de la tupla tenen el mateix valor
+tuple1 = (45, 45, 45, 45)
+
+7. Com es crea una tupla buida? Com es converteix una tupla en una llista?
+
+8. Tenint una llista de números, crear una llista de tuples amb el 1r element com a número i el 2n com a cub del número.
+Input: list = [1, 2, 3]
+Output: [(1, 1), (2, 8), (3, 27)]
+
+9. Fes una llista de tuples de totes les combinacions possibles de 2 tuples d'arguments. 
+Input : t1 = (7, 2), t2 = (7, 8)
+Output : [(7, 7), (7, 8), (2, 7), (2, 8), (7, 7), (7, 2), (8, 7), (8, 2)]
+
+10. Trobar els elements repetits d’una llista i construir una llista de tuples
+on surti en primer terme l’element i en segon terme quantes vegades apareix.
+llista = [1,2,3,1,2,1,1]
+sortida = [(1,4),(2,2),(3,1)]
+
+11. Troba en quina posició es troba l’element 20:
+aTuple = ("Orange", [10, 20, 30], (5, 15, 25))
+        """,
     },
 }
 
