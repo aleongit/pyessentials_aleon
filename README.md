@@ -2,7 +2,7 @@
 
 Recopilació d'exercicis essencials Python by aleon.
 
-- **Variables** 11 to 15
+- **Conditionals** 11 to 15
 
 
 

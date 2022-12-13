@@ -2,7 +2,7 @@
 # Aleix Leon
 
 # imports ______________________________________________
-import os
+#import os
 
 # constants ______________________________________________
 from constants import *
@@ -10,25 +10,22 @@ from constants import *
 # classes objecte ______________________________________________
 
 # funcions ______________________________________________
+from functions import *
 
 # test ______________________________________________________________
-command = 'python py/11.py'
-op = None
-
-print(ESSENTIALS.keys())
-print('' in ESSENTIALS.keys())
-
-while op != '0':
-    for k,v in ESSENTIALS.items():
-        print(v['title'])
-    op = input("opció: ")
-    print(op)
-    if op in ESSENTIALS.keys():
-        print
-        #os.system(f'python py/{op}.py')
-        os.system(f"python {ESSENTIALS[op]['script']}")
+#command = 'python py/11.py'
+#print(ESSENTIALS.keys())
+#print('' in ESSENTIALS.keys())
 
 # programa ______________________________________________________________
 if __name__ == "__main__":
-    # inicialtzem
-    pass
+    
+    # init
+    op = None
+
+    while op != '0':
+        printMenu()
+        op = input("Opció [0 Sortir]: ")
+        #print(op)
+        if op in ESSENTIALS.keys():
+            runExercici(op)
