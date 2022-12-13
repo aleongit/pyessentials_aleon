@@ -10,6 +10,7 @@ Recopilació d'exercicis essencials Python by aleon.
 - **List Comprehension** 61
 - **Tuples** 71
 - **Set** 81
+- **Dictionaries** 91 to 94
 
 
 ## Requeriments

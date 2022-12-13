@@ -13,6 +13,7 @@ CATEGORIES = [
     'List Comprehension',
     'Tuples',
     'Set',
+    'Dictionaries',
 ]
 
 ESSENTIALS = {
@@ -325,7 +326,7 @@ unString = 'Un string qualsevol que té molts espais'
 10.Cercar totes les paraules d’una cadena de menys de 4 lletres.
 """,
     },
-        '71':  {
+    '71':  {
         'script': 'py/71.py',
         'category': CATEGORIES[6],
         'title': "Tuples - 11 exercicis amb menú",
@@ -367,11 +368,55 @@ sortida = [(1,4),(2,2),(3,1)]
 aTuple = ("Orange", [10, 20, 30], (5, 15, 25))
         """,
     },
-        '81':  {
+    '81':  {
         'script': 'py/81.py',
         'category': CATEGORIES[7],
         'title': "Set - 7 exercicis amb menú",
         'text': """
+        """,
+    },
+    '91':  {
+        'script': 'py/91.py',
+        'category': CATEGORIES[8],
+        'title': "Crear diccionaris amb bucle i dictionary comprehension",
+        'text': """Demana un nombre per teclat, comprova que sigui més gran que 1000, i no avancis fins que així sigui
+i després  crea un diccionari on les claus siguin des del número 1 fins al número indicat, múltiple de 10,
+i els valors siguin la meitat de les claus.
+Fes dues versions, amb bucle for i amb dictionary comprehension 
+        """,
+    },
+    '92':  {
+        'script': 'py/92.py',
+        'category': CATEGORIES[8],
+        'title': "Crear diccionari a partir de cadena",
+        'text': """Demana una cadena per teclat  i genera un diccionari amb la quantitat aparicions de cada caràcter en la cadena
+        """,
+    },
+    '93':  {
+        'script': 'py/93.py',
+        'category': CATEGORIES[8],
+        'title': "Bàscula de fruiteria",
+        'text': """Programar una bàscula d’una fruiteria. L’objectiu serà fer el tiquet de cada venda. Declara un diccionari.
+El diccionari tindrà com a clau el nom de les fruites, i com a valor el preu per kg de la fruita indicada
+(fes un diccionari que tingui 5 tipus de fruites diferents).
+Un cop creat el diccionari demana per cada fruita el pes, i acumula en una variable import.
+Has d’imprimir en un format net i polit un tiquet similar a l’exemple.
+        """,
+    },
+    '94':  {
+        'script': 'py/94.py',
+        'category': CATEGORIES[8],
+        'title': "Notes alumnes",
+        'text': """Funcionalitats: Afegir Alumne, Eliminar alumne, Afegir  notes a alumne (mòdul, nota),
+llistat de tots els alumnes (la llista de tots els alumnes),
+llistat d’un alumne (el nom de l’alumne i totes les seves notes),
+estadístiques (que responen a les qüestions més avall) i sortir.
+
+Demana els noms dels alumnes per teclat, els noms dels alumnes d'una classe i les notes que han obtingut.
+Cada alumne pot tenir diferent quantitat de notes, que també  s’introduiran per teclat, 
+valida que siguin notes entre 0 i 10.
+Guarda la informació en un diccionari, les claus seran els noms dels alumnes i els valors seran llistes de tuples
+de parelles de tuples  (modul, nota) per emmagatzemar les notes de cada alumne.
         """,
     },
 }
