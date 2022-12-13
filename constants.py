@@ -10,6 +10,7 @@ CATEGORIES = [
     'Loops [for] and lists',
     'Mastermind',
     'Classics',
+    'List Comprehension',
 ]
 
 ESSENTIALS = {
@@ -289,8 +290,38 @@ Prova'l amb la frase "m'agraden els algorismes classics".
         'category': CATEGORIES[4],
         'title': "Combinació d'algorismes clàssics",
         'text': """# Agafa un programa d’ordenació dels que has fet (1 a 3), 
-# ordena L1 i fes-lo servir com a entrada del programa de cerca binària.".
+# ordena L1 i fes-lo servir com a entrada del programa de cerca binària.
         """,
+    },
+    '61':  {
+        'script': 'py/61.py',
+        'category': CATEGORIES[5],
+        'title': "List Comprehension - 10 exercicis amb menú",
+        'text': """1.Crear una llista idèntica a llistaExemple mitjançant la comprensió de la llista.
+llistaExemple=[1,2,3,4,5,6]
+
+2.Crear una llista a partir dels elements d'un interval de 1200 a 1980 ambdós inclosos,
+amb passos de 130, mitjançant la comprensió de la llista.
+
+3.Crear una llista nova a partir de l’anterior, però sumeu 6 a cada element.
+
+4.Crear una llista que sigui els quadrats de cada element de la llista.
+llistaExemple=[1,2,3,4,5,6]
+
+5.Crear una llista a partir dels quadrats de cada element de la llista si el quadrat > 50.
+llistaExemple2=[1,2,3,7,9,10]
+
+6.Crear una llista amb tots els números de l’1 al 1000 que són divisibles per 7.
+
+7.Crear una llista amb tots els números de l’1 al 1000 que tinguin un 3.
+
+8.Comptar el nombre d'espais d'una cadena
+unString = 'Un string qualsevol que té molts espais'
+
+9.Treure totes les vocals d'una cadena.
+
+10.Cercar totes les paraules d’una cadena de menys de 4 lletres.
+""",
     },
 }
 
