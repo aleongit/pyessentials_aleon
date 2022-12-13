@@ -21,3 +21,4 @@ def printMenu():
 def runExercici(num):
     print(f"{num}. {ESSENTIALS[num]['text']}")
     os.system(f"python {ESSENTIALS[num]['script']}")
+    input('\nPrem una tecla ...')
