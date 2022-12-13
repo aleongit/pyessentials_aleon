@@ -6,16 +6,32 @@ from constants import *
 
 # funcions ______________________________________________
 
-def printMenu():
+
+def printCategories():
     print()
-    cat = None
+    for index, cat in enumerate(CATEGORIES):
+        print(f"{index + 1}. {cat}")
+    print()
+
+def indexCategories():
+    return [str(index + 1) for index, el in enumerate(CATEGORIES)]
+
+def printExercicisCategoria(index):
+    cat = CATEGORIES[index]
+    print()
+    print('='*50)
+    print(f"{cat.upper()}")
+    print('='*50)
+    print()
+
     for k, v in ESSENTIALS.items():
-        if cat != v['category']:
-            cat = v['category']
-            print(f"\n{v['category'].upper()}")
-            print('='*50)
-        print(f"{k}. {v['title']}")
+        if cat == v['category']:    
+            print(f"{k}. {v['title']}")
     print()
+
+def indexExercicisCategoria(index):
+    cat = CATEGORIES[index]
+    return [k for k, v in ESSENTIALS.items() if cat == v['category'] ]
 
 
 def runExercici(num):

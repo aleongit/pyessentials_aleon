@@ -21,11 +21,19 @@ from functions import *
 if __name__ == "__main__":
     
     # init
-    op = None
+    opcat = None
 
-    while op != '0':
-        printMenu()
-        op = input("Opció [0 Sortir]: ")
-        #print(op)
-        if op in ESSENTIALS.keys():
-            runExercici(op)
+    while opcat != '0':
+        printCategories()
+        print(indexCategories(), end=' ')
+        print('[0 Sortir]')
+        opcat = input("Opció: ")
+        if opcat in indexCategories():
+            op = None
+            while op != '0':
+                printExercicisCategoria(int(opcat)-1)
+                print(indexExercicisCategoria(int(opcat)-1), end=' ')
+                print('[0 <<]')
+                op = input("Opció: ")
+                if op in ESSENTIALS.keys():
+                    runExercici(op)

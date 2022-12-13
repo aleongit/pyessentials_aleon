@@ -4,9 +4,9 @@ Recopilació d'exercicis essencials Python by aleon.
 
 - **Conditionals - if, elif & else** 11 to 15
 - **Loops - while** 21 to 23
-- **Loops - for** 31 to 310
+- **Loops [for] and lists** 31 to 310
 - **Mastermind** game using loops, conditionals and lists - 41
-
+- **Classic Algorithms** 51 to 510
 
 
 ## Requeriments
