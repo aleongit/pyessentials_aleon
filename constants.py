@@ -167,6 +167,38 @@ en comú. P.exemple: llista1 = [1,2,3,4,5,6,7], llista2 = [4,1,20,100]
 imprimeix per pantalla “Tenen 2 elements en comú i són: 1,4”
         """,
     },
+    '41':  {
+        'script': 'py/41.py',
+        'category': 'Mastermind',
+        'title': "Joc Mastermind amb ús de bucles, condicionals i llistes.",
+        'text': """Es generarà una seqüència aleatòria de mida 4 que serà una combinació de “ABCDE”,
+pot haver-hi lletres repetides, per exemple AABB, ACBD, ADAB, BBDC, etc.
+FOR concatenant random choise x lletra, tantes vegades com lletra
+l'usuari té 5 vides, és a dir 5 possibilitats per intentar encertar la combinació.
+
+Mentre no hagi encertat la combinació, i encara tingui vides fer:
+Resta una vida.
+Mostra els intents que ha fet fins el moment.
+Demana combinació per teclat i no avança fins que no sigui combinació possible
+(mida 4 i formada per les lletres possibles)
+Compta quantes lletres encertades estan en la posició correcta.
+Marca aquestes posicions per evitar comptar-les dues vegades.
+Compta quantes lletres encertades en posició incorrecta hi ha.
+Marca aquestes posicions per evitar comptar-les dues vegades.
+
+Si la combinació és guanyadora,
+Mostra missatge d’enhorabona i finalitza el programa.
+
+En altre cas:
+Mostra quines lletres en posició correcta hi ha amb el símbol #
+Mostra quines lletres encertades hi ha en posició incorrecta amb el símbol *
+Mostra les lletres no existents a la combinació amb el símbol -
+Per exemple si la combinació guanyadora és AACB i l’usuari entra ACDE ha de mostrar # * - -. La A és correcta i està en la posició correcta #, la C és correcta en posició incorrecta * i la resta D E no encertades, per tant - -.
+   A B C D
+   A A B B
+   # - * * (La que encertem ja la marquem com encertada)
+""",
+    },
 }
 
 # classes objecte ______________________________________________
