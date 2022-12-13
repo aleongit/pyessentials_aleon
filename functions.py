@@ -12,7 +12,7 @@ def printMenu():
     for k, v in ESSENTIALS.items():
         if cat != v['category']:
             cat = v['category']
-            print(f"{v['category'].upper()}")
+            print(f"\n{v['category'].upper()}")
             print('='*50)
         print(f"{k}. {v['title']}")
     print()

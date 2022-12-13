@@ -2,7 +2,8 @@
 
 Recopilació d'exercicis essencials Python by aleon.
 
-- **Conditionals** 11 to 15
+- **Conditionals - if, elif & else** 11 to 15
+- **Loops - while** 21 to 23
 
 
 
