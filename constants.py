@@ -14,6 +14,7 @@ CATEGORIES = [
     'Tuples',
     'Set',
     'Dictionaries',
+    'Review',
 ]
 
 ESSENTIALS = {
@@ -417,6 +418,66 @@ Cada alumne pot tenir diferent quantitat de notes, que també  s’introduiran p
 valida que siguin notes entre 0 i 10.
 Guarda la informació en un diccionari, les claus seran els noms dels alumnes i els valors seran llistes de tuples
 de parelles de tuples  (modul, nota) per emmagatzemar les notes de cada alumne.
+        """,
+    },
+    '101':  {
+        'script': 'py/101.py',
+        'category': CATEGORIES[9],
+        'title': "Entre 1900 i 1999",
+        'text': """Entra un any per teclat entre el 1900 i el 1999
+No avancis fins que l’any entrat està dins de l’interval
+Calcula la suma de les xifres de l’any
+Resta de l’any la suma de les xifres
+Comprova que el resultat és divisible per 9
+        """,
+    },
+    '102':  {
+        'script': 'py/102.py',
+        'category': CATEGORIES[9],
+        'title': "Carl Friedrich Gauss tenia raó",
+        'text': """Fes un bucle que demani un nombre enter 
+Surt del bucle quan l’usuari entri un enter entre 1 i 20 per teclat
+
+Calcula el resultat de la fórmula n·(n+1) / 2. 
+Compte: el resultat de la fórmula ha de ser enter
+
+Imprimeix per pantalla el resultat anterior
+
+Fes un bucle que sumi els enters des d’1 fins al nombre entrat per teclat
+Compara el resultat de la fórmula amb la suma calculada en el bucle
+Si són iguals escriu “Carl Friedrich Gauss tenia raó”
+Sinó escriu “Alguna cosa ha fallat”
+        """,
+    },
+    '103':  {
+        'script': 'py/103.py',
+        'category': CATEGORIES[9],
+        'title': "Meteo",
+        'text': """Aquí teniu una llista de diccionaris de les dades metereològiques d'alguns observatoris de Catalunya
+Les claus de cada diccionari són ['Observatori', 'Alt.', 'Temp. Actual', 'Temp. Màx', 'Temp. Min', 'Humitat Act', 'Humitat Màx', 'Humitat Mín', 'Baròmetre Act', 'Baròmetre Màx', 'Baròmetre Mín', 'Vent Act', 'Vent Màx', 'Precip Avui', 'Precip Any', 'IR']
+# Exercici 1:
+De quants observatoris tenim dades?
+Troba en quina població fa més fred actualment,
+en quina han tingut la temperatura màxima més alta,
+quina és la mitjana de les temperatures mínimes
+
+# Exercici 2:
+Crea una llista de tuples amb el nom de la població i la precipiació acumulada anual
+Ordena la llista per precipitació acumulada utilitzant algun dels algorismes d'ordenació treballats a classe 
+quines 5 poblacions hi ha plogut més?
+
+# Exercici 3
+Fes una llista a partir de dadesMeteo que només hi hagi les poblacions que estan per sobre els 500 metres d'alçada
+quantes poblacions hi ha que compleixin aquest criteri?
+
+# Exercici 4
+Fes un estudi dels observatoris de la ciutat de Barcelona, 
+crea una llista de tuples de 3 elements, el nom de l'Observatori, la humitat actual, i la ratxa màxima de vent dels observatoris de la ciutat de Barcelona
+En quin hi fa més vent?
+En quin hi ha menys humitat actualment?
+
+# Exercici 5:
+Imprimeix les dades en un format net i polit
         """,
     },
 }

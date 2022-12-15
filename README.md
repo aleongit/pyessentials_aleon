@@ -11,6 +11,7 @@ Recopilació d'exercicis essencials Python by aleon.
 - **Tuples** 71
 - **Set** 81
 - **Dictionaries** 91 to 94
+- **REVIEW** 101 to 103
 
 
 ## Requeriments
