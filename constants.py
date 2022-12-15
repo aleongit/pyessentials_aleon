@@ -17,7 +17,8 @@ CATEGORIES = [
     'Review',
     'Functions',
     'Functions with return',
-    'Functions & 2D arrays'
+    'Functions & 2D arrays',
+    'Built-in Functions',
 ]
 
 ESSENTIALS = {
@@ -655,6 +656,35 @@ Exemple: creu(qua,"|"), aprofitant la mateixa matriu de l’exercici anterior, g
 - - * - - - - - - | - - - - - - * - -
 - * - - - - - - - | - - - - - - - * -
 * - - - - - - - - | - - - - - - - - *
+        """,
+    },
+    '141':  {
+        'script': 'py/141.py',
+        'category': CATEGORIES[13],
+        'title': "Funcions incorporades",
+        'text': """Sovint per aprendre a programar funcions el que es fa és programar funcions incorporades del llenguatge, així podem comprovar que donen el mateix resultat.
+Nota: Heu de programar la funció sense utilitzar la funció anàloga de Python. No cal programar tots i cadascun dels casos posibles, però sí els més generals.
+Nota2: Cal comprovar el tipus dels paràmetres passats a la funció amb la funció incorporada isinstance(). Si és del tipus esperat retornem el que ens han passat sense canvis o None, el que sigui millor.
+
+Programa la funció absolut que faci el mateix que la funció incorporada de Python abs() passant-li un nombre (enter o un float).
+
+Programa la funció elevar que faci el mateix que la funció incorporada de Python pow() passant-li 2 enters, 2 floats, 1 enter i 1 float o 1 float i 1 enter.
+
+Programa la funció longitud que faci el mateix que la funció incorporada de Python len() passant-li una cadena, una llista o un iterable.
+
+Programa la funció alreves que faci el mateix que la funció incorporada (mètode) de Python list.reverse() passant-li una llista.
+
+Programa la funció elevar que faci el mateix que la funció incorporada de Python pow() passant-li 3 enters (el darrer enter serveix per calcular el mòdul).
+
+Programa la funció maxim que faci el mateix que la funció incorporada de Python max() passant-li una llista d’enters o una llista de cadenes de caràcters.
+
+Programa la funció suma que faci el mateix que la funció incorporada de Python sum() passant-li un iterable (pot ser una llista o una tupla que és com una llista i s’accedeix igual però va entre parèntesis) de nombres. Opcionalment es pot passar un valor a afegir a la suma.
+
+Programa la funció ordenat que faci el mateix que la funció incorporada de Python sorted() passant-li una llista o una tupla. Dels paràmetres opcionals que té la funció incorporada, programa el reverse que indica si s’ordena ascent o descent.
+
+Programa la funció rang que faci el mateix que la classe incorporada de Python range() passant-li 1 enter que indica el final del rang. La nostra funció retornarà una llista o una tupla amb els valors generats.
+
+Programa la funció rang que faci el mateix que la classe incorporada de Python range() passant-li 2 o 3 enters que indiquen l’inici del rang,i el final del rang i el pas. La nostra funció retornarà una llista o una tupla amb els valors generats. Es pot fer modicant l’anterior (ha de continuar funcionant) o fer-ne una versió nova.
         """,
     },
 }
