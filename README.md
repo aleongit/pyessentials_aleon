@@ -12,6 +12,8 @@ Recopilació d'exercicis essencials Python by aleon.
 - **Set** 81
 - **Dictionaries** 91 to 94
 - **REVIEW** 101 to 103
+- **Functions** 111
+- **Functions with return** 121 to 122
 
 
 ## Requeriments

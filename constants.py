@@ -15,6 +15,8 @@ CATEGORIES = [
     'Set',
     'Dictionaries',
     'Review',
+    'Functions',
+    'Functions with return',
 ]
 
 ESSENTIALS = {
@@ -478,6 +480,53 @@ En quin hi ha menys humitat actualment?
 
 # Exercici 5:
 Imprimeix les dades en un format net i polit
+        """,
+    },
+    '111':  {
+        'script': 'py/111.py',
+        'category': CATEGORIES[10],
+        'title': "Funcions",
+        'text': """Fes un programa en Python amb un menú per fer la crida a cadascuna de les següents funcions., cap de les funcions té retorn.
+
+Nom funció: Multiplica. Funcionalitat: calcula i imprimeix el resultat de multiplicar dos números introduïts per teclat, els inputs es fan a fora de la funció.
+
+Nom funció: anys2000. Funcionalitat: Input a dins de la funció.Demana a l’usuari l’any actual i escriu: “Des del 2000 han passat x anys”, substituint la x pel nombre d’anys que han introduït.
+
+Nom funció tiquetFruita. Funcionalitat: tiquet fruita fet a la tasca de dicionaris 9.
+
+Nom funció:  notaUF. Funcionalitat: Demana la nota de l’examen i la nota de pràctiques. Fa el càlcul següent: 
+Només fa mitja si les dues notes són més grans o iguals que 4
+Nota Mòdul = 70% * NotaEx +30% * NotaPr
+Si la nota és més gran o igual que 5 arrodoneix i imprimeix el literal corresponent ( 5 Aprovat, 6 Bé, 7 8 Notable, 9 10 Excel·lent)
+Si està suspès demana si ha comprat un pernil al professor/a. Si és que sí imprimeix “aprovat perniler”.
+        """,
+    },
+    '121':  {
+        'script': 'py/121.py',
+        'category': CATEGORIES[11],
+        'title': "Funcions amb retorn",
+        'text': """Modifica l’exercici anterior substituint els prints per returns
+        """,
+    },
+    '122':  {
+        'script': 'py/122.py',
+        'category': CATEGORIES[11],
+        'title': "+ Funcions amb retorn",
+        'text': """Fes un altre programa en python amb un menú per fer la crida a les següents funcions:
+
+Nom funció:  factorial. Funcionalitat: Calcula el factorial d'un número (un enter no negatiu). La funció accepta el nombre com a paràmetre i retorna el factorial, o bé un error (-1), el missatge d’error s’imprimirà després de la crida.
+
+Nom funció:  comptaMajusMinus. Funcionalitat: accepta una cadena com a paràmetre  i retorna el nombre de lletres majúscules i minúscules. Cadena de mostra: ‘Una Cadena De Prova' Sortida esperada: (4,12). El missatge es mostra després de la crida. 
+
+Nom funció:  llistaUnitaria. Funcionalitat: Donada una  llista que li passem com paràmetre, retorna una nova llista amb elements únics de la primera llista. Llista de mostres: [1,2,3,3,3,3,4,5] Llista unitària: [1, 2, 3, 4, 5]. No es pot utilitzar la comanda set.
+
+Nom funció:  primer. Funcionalitat: Escriu una funció Python que pren un nombre com a paràmetre menor que 10000 i comproveu si el número és primer o no, o bé error. (podeu utilitzar l’algoritme del sedàs d’Eratòstanes)
+
+Nom funció parells: Funcionalitat: Retorna els números parells d'una llista determinada passada com paràmetre. Llista de mostres: [1, 2, 3, 4, 5, 6, 7, 8, 9] Resultat esperat: [2, 4, 6, 8] 
+
+Nom funció perfecte: Funcionalitat: Escriviu una funció Python per comprovar si un número és perfecte o no. Segons Wikipedia: En la teoria de nombres, un nombre perfecte és un enter positiu que és igual a la suma dels seus divisors positius correctes, és a dir, la suma dels seus divisors positius excloent el nombre en si (també conegut com la seva suma alíquota). De forma equivalent, un nombre perfecte és un nombre que és la meitat de la suma de tots els seus divisors positius (incloent-hi). Exemple: el primer nombre perfecte és 6, perquè 1, 2 i 3 són els seus divisors positius correctes, i 1 + 2 + 3 = 6. Igualment, el número 6 és igual a la meitat de la suma de tots els seus divisors positius: (1 + 2 + 3 + 6) / 2 = 6. El següent número perfecte és 28 = 1 + 2 + 4 + 7 + 14. 
+
+Nom funció palíndrom: Funcionalitat: verifica si una cadena passada com paràmetre és palíndrom o no.
         """,
     },
 }
