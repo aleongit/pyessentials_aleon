@@ -17,6 +17,7 @@ CATEGORIES = [
     'Review',
     'Functions',
     'Functions with return',
+    'Functions & 2D arrays'
 ]
 
 ESSENTIALS = {
@@ -527,6 +528,133 @@ Nom funció parells: Funcionalitat: Retorna els números parells d'una llista de
 Nom funció perfecte: Funcionalitat: Escriviu una funció Python per comprovar si un número és perfecte o no. Segons Wikipedia: En la teoria de nombres, un nombre perfecte és un enter positiu que és igual a la suma dels seus divisors positius correctes, és a dir, la suma dels seus divisors positius excloent el nombre en si (també conegut com la seva suma alíquota). De forma equivalent, un nombre perfecte és un nombre que és la meitat de la suma de tots els seus divisors positius (incloent-hi). Exemple: el primer nombre perfecte és 6, perquè 1, 2 i 3 són els seus divisors positius correctes, i 1 + 2 + 3 = 6. Igualment, el número 6 és igual a la meitat de la suma de tots els seus divisors positius: (1 + 2 + 3 + 6) / 2 = 6. El següent número perfecte és 28 = 1 + 2 + 4 + 7 + 14. 
 
 Nom funció palíndrom: Funcionalitat: verifica si una cadena passada com paràmetre és palíndrom o no.
+        """,
+    },
+    '131':  {
+        'script': 'py/131.py',
+        'category': CATEGORIES[12],
+        'title': "Funcions i Matrius de 2 dimensions",
+        'text': """Programa la funció matriu2d, que li passes 2 nombres enters n1, n2 i retorna una matriu m de 2 dimensions n1 x n2 plena de nombres aleatoris entre l’1 i el 100.
+Programa la funció printMatriu, que imprimeix la matriu que li passes com a paràmetre de manera similar a l’exemple:
+
+Exemple:
+m = [[82, 38, 49, 44, 70, 31, 51, 86, 74, 22], [40, 71, 99, 53, 89, 62, 8, 36, 1, 2], [51, 100, 51, 58, 88, 60, 73, 84, 16, 75], [39, 85, 61, 18, 97, 94, 9, 86, 6, 71], [38, 76, 27, 30, 35, 53, 67, 94, 38, 58]]
+================= Funció printMatriu ===========================
+82 38 49 44 70 31 51 86 74 22
+40 71 99 53 89 62  8 36  1  2
+51 100 51 58 88 60 73 84 16 75
+39 85 61 18 97 94  9 86  6 71
+38 76 27 30 35 53 67 94 38 58
+
+Programa la funció llistaMultiples que li passes la matriu m de 2 dimensions com a argument, i un enter e entre l’1 i el 10 i retorna una llista ll d’1 dimensió formada pels múltiples d’e existents a la matriu.
+Ex:
+llistaMultiples(m,5) per a la mateixa matriu de l’exemple 2 anterior.
+genera la sortida: ll = [70, 40, 100, 60, 75, 85, 30, 35]
+
+Programa la funció llistaUnica que li passes la matriu m i retorna una llista única (sense elements repetits) d’1 dimensió.
+Exemple: llistaUnica(m)) genera la sortida:
+[82, 38, 49, 44, 70, 31, 51, 86, 74, 22, 40, 71, 99, 53, 89, 62, 8, 36, 1, 2, 100, 58, 88, 60, 73, 84, 16, 75, 39, 85, 61, 18, 97, 94, 9, 6, 76, 27, 30, 35, 67]
+
+Programa la funció minMax que retorna el mínim i el màxim de la matriu m que li passes com a paràmetre.
+Exemple: minMax(m)  genera la sortida:
+(1, 100)
+
+Programa la funció acabaEn que li passes la matriu m com a argument, i un enter e entre l’0 i el 9 i retorna una llista d’1 dimensió formada pels nombres que la seva última xifra és e.
+Exemple: acabaEn(m,5) genera la sortida:
+[75, 85, 35]
+
+Programa la funció quadrat que donat un sencer s entre 10 i 20 retorna una matriu quadrada de 2 dimensions de mida s x s inicialitzada al caràcter que li passes com a segon paràmetre.
+Exemple: quadrat(19,"*") genera la sortida:
+* * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * *
+
+Programa la funció inicialitza que inicialitza tots els elements de la matriu al caràcter que li passes per argument. (arguments, la matriu q i el caràcter c).
+Exemple: inicialitza(qua,"-") genera la sortida:
+- - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - -
+
+Programa la funció diagonal que posa en les diagonals de la matriu quadrada q, el caràcter c. Es passen com a paràmetres de la funció q i c.
+
+Exemple: diagonal(qua,"*") genera la sortida:
+* - - - - - - - - - - - - - - - - - *
+- * - - - - - - - - - - - - - - - * -
+- - * - - - - - - - - - - - - - * - -
+- - - * - - - - - - - - - - - * - - -
+- - - - * - - - - - - - - - * - - - -
+- - - - - * - - - - - - - * - - - - -
+- - - - - - * - - - - - * - - - - - -
+- - - - - - - * - - - * - - - - - - -
+- - - - - - - - * - * - - - - - - - -
+- - - - - - - - - * - - - - - - - - -
+- - - - - - - - * - * - - - - - - - -
+- - - - - - - * - - - * - - - - - - -
+- - - - - - * - - - - - * - - - - - -
+- - - - - * - - - - - - - * - - - - -
+- - - - * - - - - - - - - - * - - - -
+- - - * - - - - - - - - - - - * - - -
+- - * - - - - - - - - - - - - - * - -
+- * - - - - - - - - - - - - - - - * -
+* - - - - - - - - - - - - - - - - - *
+
+Programa la funció creu que rep 2 paràmetres n i c:
+Comprova que n sigui un nombre senar positiu sinó retorna “error”.
+Genera una matriu quadrada de mida n x n, amb tots el elements “ “.
+Forma una creu amb el caràcter c, és a dir, tots els elements de la columna del mig han de ser el caràcter c i tots els elements de la fila del mig han de ser el caràcter c.
+
+Exemple: creu(qua,"|"), aprofitant la mateixa matriu de l’exercici anterior, genera la sortida:
+* - - - - - - - - | - - - - - - - - *
+- * - - - - - - - | - - - - - - - * -
+- - * - - - - - - | - - - - - - * - -
+- - - * - - - - - | - - - - - * - - -
+- - - - * - - - - | - - - - * - - - -
+- - - - - * - - - | - - - * - - - - -
+- - - - - - * - - | - - * - - - - - -
+- - - - - - - * - | - * - - - - - - -
+- - - - - - - - * | * - - - - - - - -
+| | | | | | | | | | | | | | | | | | |
+- - - - - - - - * | * - - - - - - - -
+- - - - - - - * - | - * - - - - - - -
+- - - - - - * - - | - - * - - - - - -
+- - - - - * - - - | - - - * - - - - -
+- - - - * - - - - | - - - - * - - - -
+- - - * - - - - - | - - - - - * - - -
+- - * - - - - - - | - - - - - - * - -
+- * - - - - - - - | - - - - - - - * -
+* - - - - - - - - | - - - - - - - - *
         """,
     },
 }

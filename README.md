@@ -14,6 +14,7 @@ Recopilació d'exercicis essencials Python by aleon.
 - **REVIEW** 101 to 103
 - **Functions** 111
 - **Functions with return** 121 to 122
+- **Functions & 2D Arrays** 131
 
 
 ## Requeriments
