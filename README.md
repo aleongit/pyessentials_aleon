@@ -18,6 +18,7 @@ Recopilació d'exercicis essencials Python by aleon.
 - **Built-in Functions** 141
 - **Command Line Arguments** 151 to 155
 - **Files** 161 to 1614
+- **REVIEW** 171
 
 ## Requeriments
 

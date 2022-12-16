@@ -14,13 +14,14 @@ CATEGORIES = [
     'Tuples',
     'Set',
     'Dictionaries',
-    'Review',
+    'Review 1',
     'Functions',
     'Functions with return',
     'Functions & 2D arrays',
     'Built-in Functions',
     'Command Line Arguments',
     'Files',
+    'Review 2',
 ]
 
 ESSENTIALS = {
@@ -891,6 +892,29 @@ ccc
 dddd
 ...
 zzzzzzzzz...zz
+        """,
+    },
+        '171':  {
+        'script': 'py/171.py',
+        'arguments': True,
+        'category': CATEGORIES[16],
+        'title': "Simulant 'wc' de linux amb python",
+        'text': """Haureu d’implementar un programa robust i modular amb la següent sintaxi:
+
+$python3 ex.py file [c] [-i -p -w -f] [--help]
+
+• ex.py: Escriviu un programa en Python per comptar el nombre de línies d'un fitxer de text que passeu com a 1r argument.
+• Afegiu un segon argument opcional c que compta les línies que contenen el caràcter c.
+• Si s’especifica l’argument opcional -i, el comportament és al contrari, compta totes les línies que no contenen el caràcter c.
+• Afegiu al programa anterior l’argument opcional -p, que farà que compti les línies de l’arxiu que comencen pel caràcter c.
+Recordeu que si s’especifica -i farà el contrari. 
+• Si en comptes d’una p minúscula és una P majúscula, és fixarà en l’últim caràcter de la línia (aneu amb compte amb el “\n” final de línia que no considerem últim caràcter en aquest cas).
+• Si a més hi ha l’argument opcional -w comptarà, a part de les línies, les paraules que contenen el caràcter c. Si no s’especifica c haurà de comptar totes les paraules.
+Recordeu que si hi ha -i el comportament és al contrari i -P mira l’últim caràcter.
+• Si també hi ha l’argument opcional -f la sortida no serà per pantalla, sinó a un arxiu anomenat sortida.txt
+• Si només hi ha un argument i és --help mostrarà una pantalla d’ajuda on s’expliqui la funcionalitat de cada argument i mostri alguns exemples
+• En cas que la combinació d’arguments no sigui correcta haurà de mostrar el missatge d’error corresponent i mostrar la pantalla d’ajuda.
+• Si no s’especifica cap argument cal que mostri un missatge d’error i indiqui quina és la comanda per obtenir ajuda.
         """,
     },
 }
