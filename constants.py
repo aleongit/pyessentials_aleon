@@ -19,6 +19,7 @@ CATEGORIES = [
     'Functions with return',
     'Functions & 2D arrays',
     'Built-in Functions',
+    'Command Line Arguments',
 ]
 
 ESSENTIALS = {
@@ -95,7 +96,7 @@ Demanarem el password per teclat i hem de comprovar que:
 Comenci per la lletra ‘A’
 Tingui una llargada mínima de 6 caràcters
 Tingui una llarga màxima de 16 caràcters
-Contingui 1 dels següents caràcters especials ( ) / ! $ % & 
+Contingui 1 dels següents caràcters especials ( ) / ! $ % &
 L’usuari haurà de continuar introduint strings fins que n’introdueixi un de vàlid.
         """,
     },
@@ -210,7 +211,8 @@ En altre cas:
 Mostra quines lletres en posició correcta hi ha amb el símbol #
 Mostra quines lletres encertades hi ha en posició incorrecta amb el símbol *
 Mostra les lletres no existents a la combinació amb el símbol -
-Per exemple si la combinació guanyadora és AACB i l’usuari entra ACDE ha de mostrar # * - -. La A és correcta i està en la posició correcta #, la C és correcta en posició incorrecta * i la resta D E no encertades, per tant - -.
+# * - -. La A és correcta i està en la posició correcta #, la C és correcta en posició incorrecta * i la resta D E no encertades, per tant - -.
+Per exemple si la combinació guanyadora és AACB i l’usuari entra ACDE ha de mostrar
    A B C D
    A A B B
    # - * * (La que encertem ja la marquem com encertada)
@@ -297,7 +299,7 @@ Prova'l amb la frase "m'agraden els algorismes classics".
         'script': 'py/510.py',
         'category': CATEGORIES[4],
         'title': "Combinació d'algorismes clàssics",
-        'text': """# Agafa un programa d’ordenació dels que has fet (1 a 3), 
+        'text': """# Agafa un programa d’ordenació dels que has fet (1 a 3),
 # ordena L1 i fes-lo servir com a entrada del programa de cerca binària.
         """,
     },
@@ -360,7 +362,7 @@ tuple1 = (45, 45, 45, 45)
 Input: list = [1, 2, 3]
 Output: [(1, 1), (2, 8), (3, 27)]
 
-9. Fes una llista de tuples de totes les combinacions possibles de 2 tuples d'arguments. 
+9. Fes una llista de tuples de totes les combinacions possibles de 2 tuples d'arguments.
 Input : t1 = (7, 2), t2 = (7, 8)
 Output : [(7, 7), (7, 8), (2, 7), (2, 8), (7, 7), (7, 2), (8, 7), (8, 2)]
 
@@ -387,7 +389,7 @@ aTuple = ("Orange", [10, 20, 30], (5, 15, 25))
         'text': """Demana un nombre per teclat, comprova que sigui més gran que 1000, i no avancis fins que així sigui
 i després  crea un diccionari on les claus siguin des del número 1 fins al número indicat, múltiple de 10,
 i els valors siguin la meitat de les claus.
-Fes dues versions, amb bucle for i amb dictionary comprehension 
+Fes dues versions, amb bucle for i amb dictionary comprehension
         """,
     },
     '92':  {
@@ -418,7 +420,7 @@ llistat d’un alumne (el nom de l’alumne i totes les seves notes),
 estadístiques (que responen a les qüestions més avall) i sortir.
 
 Demana els noms dels alumnes per teclat, els noms dels alumnes d'una classe i les notes que han obtingut.
-Cada alumne pot tenir diferent quantitat de notes, que també  s’introduiran per teclat, 
+Cada alumne pot tenir diferent quantitat de notes, que també  s’introduiran per teclat,
 valida que siguin notes entre 0 i 10.
 Guarda la informació en un diccionari, les claus seran els noms dels alumnes i els valors seran llistes de tuples
 de parelles de tuples  (modul, nota) per emmagatzemar les notes de cada alumne.
@@ -439,10 +441,10 @@ Comprova que el resultat és divisible per 9
         'script': 'py/102.py',
         'category': CATEGORIES[9],
         'title': "Carl Friedrich Gauss tenia raó",
-        'text': """Fes un bucle que demani un nombre enter 
+        'text': """Fes un bucle que demani un nombre enter
 Surt del bucle quan l’usuari entri un enter entre 1 i 20 per teclat
 
-Calcula el resultat de la fórmula n·(n+1) / 2. 
+Calcula el resultat de la fórmula n·(n+1) / 2.
 Compte: el resultat de la fórmula ha de ser enter
 
 Imprimeix per pantalla el resultat anterior
@@ -467,7 +469,7 @@ quina és la mitjana de les temperatures mínimes
 
 # Exercici 2:
 Crea una llista de tuples amb el nom de la població i la precipiació acumulada anual
-Ordena la llista per precipitació acumulada utilitzant algun dels algorismes d'ordenació treballats a classe 
+Ordena la llista per precipitació acumulada utilitzant algun dels algorismes d'ordenació treballats a classe
 quines 5 poblacions hi ha plogut més?
 
 # Exercici 3
@@ -475,7 +477,7 @@ Fes una llista a partir de dadesMeteo que només hi hagi les poblacions que esta
 quantes poblacions hi ha que compleixin aquest criteri?
 
 # Exercici 4
-Fes un estudi dels observatoris de la ciutat de Barcelona, 
+Fes un estudi dels observatoris de la ciutat de Barcelona,
 crea una llista de tuples de 3 elements, el nom de l'Observatori, la humitat actual, i la ratxa màxima de vent dels observatoris de la ciutat de Barcelona
 En quin hi fa més vent?
 En quin hi ha menys humitat actualment?
@@ -496,7 +498,7 @@ Nom funció: anys2000. Funcionalitat: Input a dins de la funció.Demana a l’us
 
 Nom funció tiquetFruita. Funcionalitat: tiquet fruita fet a la tasca de dicionaris 9.
 
-Nom funció:  notaUF. Funcionalitat: Demana la nota de l’examen i la nota de pràctiques. Fa el càlcul següent: 
+Nom funció:  notaUF. Funcionalitat: Demana la nota de l’examen i la nota de pràctiques. Fa el càlcul següent:
 Només fa mitja si les dues notes són més grans o iguals que 4
 Nota Mòdul = 70% * NotaEx +30% * NotaPr
 Si la nota és més gran o igual que 5 arrodoneix i imprimeix el literal corresponent ( 5 Aprovat, 6 Bé, 7 8 Notable, 9 10 Excel·lent)
@@ -518,15 +520,15 @@ Si està suspès demana si ha comprat un pernil al professor/a. Si és que sí i
 
 Nom funció:  factorial. Funcionalitat: Calcula el factorial d'un número (un enter no negatiu). La funció accepta el nombre com a paràmetre i retorna el factorial, o bé un error (-1), el missatge d’error s’imprimirà després de la crida.
 
-Nom funció:  comptaMajusMinus. Funcionalitat: accepta una cadena com a paràmetre  i retorna el nombre de lletres majúscules i minúscules. Cadena de mostra: ‘Una Cadena De Prova' Sortida esperada: (4,12). El missatge es mostra després de la crida. 
+Nom funció:  comptaMajusMinus. Funcionalitat: accepta una cadena com a paràmetre  i retorna el nombre de lletres majúscules i minúscules. Cadena de mostra: ‘Una Cadena De Prova' Sortida esperada: (4,12). El missatge es mostra després de la crida.
 
 Nom funció:  llistaUnitaria. Funcionalitat: Donada una  llista que li passem com paràmetre, retorna una nova llista amb elements únics de la primera llista. Llista de mostres: [1,2,3,3,3,3,4,5] Llista unitària: [1, 2, 3, 4, 5]. No es pot utilitzar la comanda set.
 
 Nom funció:  primer. Funcionalitat: Escriu una funció Python que pren un nombre com a paràmetre menor que 10000 i comproveu si el número és primer o no, o bé error. (podeu utilitzar l’algoritme del sedàs d’Eratòstanes)
 
-Nom funció parells: Funcionalitat: Retorna els números parells d'una llista determinada passada com paràmetre. Llista de mostres: [1, 2, 3, 4, 5, 6, 7, 8, 9] Resultat esperat: [2, 4, 6, 8] 
+Nom funció parells: Funcionalitat: Retorna els números parells d'una llista determinada passada com paràmetre. Llista de mostres: [1, 2, 3, 4, 5, 6, 7, 8, 9] Resultat esperat: [2, 4, 6, 8]
 
-Nom funció perfecte: Funcionalitat: Escriviu una funció Python per comprovar si un número és perfecte o no. Segons Wikipedia: En la teoria de nombres, un nombre perfecte és un enter positiu que és igual a la suma dels seus divisors positius correctes, és a dir, la suma dels seus divisors positius excloent el nombre en si (també conegut com la seva suma alíquota). De forma equivalent, un nombre perfecte és un nombre que és la meitat de la suma de tots els seus divisors positius (incloent-hi). Exemple: el primer nombre perfecte és 6, perquè 1, 2 i 3 són els seus divisors positius correctes, i 1 + 2 + 3 = 6. Igualment, el número 6 és igual a la meitat de la suma de tots els seus divisors positius: (1 + 2 + 3 + 6) / 2 = 6. El següent número perfecte és 28 = 1 + 2 + 4 + 7 + 14. 
+Nom funció perfecte: Funcionalitat: Escriviu una funció Python per comprovar si un número és perfecte o no. Segons Wikipedia: En la teoria de nombres, un nombre perfecte és un enter positiu que és igual a la suma dels seus divisors positius correctes, és a dir, la suma dels seus divisors positius excloent el nombre en si (també conegut com la seva suma alíquota). De forma equivalent, un nombre perfecte és un nombre que és la meitat de la suma de tots els seus divisors positius (incloent-hi). Exemple: el primer nombre perfecte és 6, perquè 1, 2 i 3 són els seus divisors positius correctes, i 1 + 2 + 3 = 6. Igualment, el número 6 és igual a la meitat de la suma de tots els seus divisors positius: (1 + 2 + 3 + 6) / 2 = 6. El següent número perfecte és 28 = 1 + 2 + 4 + 7 + 14.
 
 Nom funció palíndrom: Funcionalitat: verifica si una cadena passada com paràmetre és palíndrom o no.
         """,
@@ -539,7 +541,8 @@ Nom funció palíndrom: Funcionalitat: verifica si una cadena passada com paràm
 Programa la funció printMatriu, que imprimeix la matriu que li passes com a paràmetre de manera similar a l’exemple:
 
 Exemple:
-m = [[82, 38, 49, 44, 70, 31, 51, 86, 74, 22], [40, 71, 99, 53, 89, 62, 8, 36, 1, 2], [51, 100, 51, 58, 88, 60, 73, 84, 16, 75], [39, 85, 61, 18, 97, 94, 9, 86, 6, 71], [38, 76, 27, 30, 35, 53, 67, 94, 38, 58]]
+m = [[82, 38, 49, 44, 70, 31, 51, 86, 74, 22], [40, 71, 99, 53, 89, 62, 8, 36, 1, 2], [51, 100, 51, 58, 88,
+    60, 73, 84, 16, 75], [39, 85, 61, 18, 97, 94, 9, 86, 6, 71], [38, 76, 27, 30, 35, 53, 67, 94, 38, 58]]
 ================= Funció printMatriu ===========================
 82 38 49 44 70 31 51 86 74 22
 40 71 99 53 89 62  8 36  1  2
@@ -554,7 +557,8 @@ genera la sortida: ll = [70, 40, 100, 60, 75, 85, 30, 35]
 
 Programa la funció llistaUnica que li passes la matriu m i retorna una llista única (sense elements repetits) d’1 dimensió.
 Exemple: llistaUnica(m)) genera la sortida:
-[82, 38, 49, 44, 70, 31, 51, 86, 74, 22, 40, 71, 99, 53, 89, 62, 8, 36, 1, 2, 100, 58, 88, 60, 73, 84, 16, 75, 39, 85, 61, 18, 97, 94, 9, 6, 76, 27, 30, 35, 67]
+[82, 38, 49, 44, 70, 31, 51, 86, 74, 22, 40, 71, 99, 53, 89, 62, 8, 36, 1, 2, 100,
+    58, 88, 60, 73, 84, 16, 75, 39, 85, 61, 18, 97, 94, 9, 6, 76, 27, 30, 35, 67]
 
 Programa la funció minMax que retorna el mínim i el màxim de la matriu m que li passes com a paràmetre.
 Exemple: minMax(m)  genera la sortida:
@@ -685,6 +689,48 @@ Programa la funció ordenat que faci el mateix que la funció incorporada de Pyt
 Programa la funció rang que faci el mateix que la classe incorporada de Python range() passant-li 1 enter que indica el final del rang. La nostra funció retornarà una llista o una tupla amb els valors generats.
 
 Programa la funció rang que faci el mateix que la classe incorporada de Python range() passant-li 2 o 3 enters que indiquen l’inici del rang,i el final del rang i el pas. La nostra funció retornarà una llista o una tupla amb els valors generats. Es pot fer modicant l’anterior (ha de continuar funcionant) o fer-ne una versió nova.
+        """,
+    },
+    '151':  {
+        'script': 'py/151.py',
+        'arguments': True,
+        'category': CATEGORIES[14],
+        'title': "Vocals de l'argument",
+        'text': """Fes un programa en Python que accepta 1 argument per la línia de comandes i si està format per lletres mostra per pantalla quantes vocals té.
+        """,
+    },
+    '152':  {
+        'script': 'py/152.py',
+        'arguments': True,
+        'category': CATEGORIES[14],
+        'title': "Arguments string i numèrics",
+        'text': """Fes un programa en Python que accepta 2 arguments, el primer comprova que és un string que només conté lletres, el segon comprova que són dígits i el transforma a sencer, i si és així fa un print de l’string tantes vegades com indica el paràmetre.
+Indica amb un print quin error ha comès l’usuari en cas que els arguments siguin incorrectes.
+        """,
+    },
+    '153':  {
+        'script': 'py/153.py',
+        'arguments': True,
+        'category': CATEGORIES[14],
+        'title': "Llista d'arguments",
+        'text': """Fes un programa en Python que generi una llista formada per tots els paràmetres que li passem com argument i la mostri per consola.
+        """,
+    },
+    '154':  {
+        'script': 'py/154.py',
+        'arguments': True,
+        'category': CATEGORIES[14],
+        'title': "Ordenació d'arguments",
+        'text': """Fes un programa en Python que comprovi que el nombre d’arguments és superior a 1, que són alfabètics i en aquest cas que els ordeni alfabèticament. Sinó que mostri quin error hi ha.
+        """,
+    },
+    '155':  {
+        'script': 'py/155.py',
+        'arguments': True,
+        'category': CATEGORIES[14],
+        'title': "Arguments format data",
+        'text': """Fes un programa en Python que accepta una data com a argument, en format dd/mm/aaaa, comprova que el format és correcte i ens retorna a quin dia de la setmana correspon.
+Podeu fer servir la biblioteca datetime.
         """,
     },
 }

@@ -13,8 +13,10 @@ def printCategories():
         print(f"{index + 1}. {cat}")
     print()
 
+
 def indexCategories():
     return [str(index + 1) for index, el in enumerate(CATEGORIES)]
+
 
 def printExercicisCategoria(index):
     cat = CATEGORIES[index]
@@ -25,16 +27,27 @@ def printExercicisCategoria(index):
     print()
 
     for k, v in ESSENTIALS.items():
-        if cat == v['category']:    
+        if cat == v['category']:
             print(f"{k}. {v['title']}")
     print()
 
+
 def indexExercicisCategoria(index):
     cat = CATEGORIES[index]
-    return [k for k, v in ESSENTIALS.items() if cat == v['category'] ]
+    return [k for k, v in ESSENTIALS.items() if cat == v['category']]
 
 
 def runExercici(num):
     print(f"{num}. {ESSENTIALS[num]['text']}")
-    os.system(f"python {ESSENTIALS[num]['script']}")
+
+    command = f"python {ESSENTIALS[num]['script']}"
+
+    # si arguments
+    if 'arguments' in ESSENTIALS[num]:
+        if ESSENTIALS[num]['arguments']:
+            print('Introdueix arguments: ')
+            arg = input(command + ' ')
+            os.system(f"{command} {arg}")
+    else:
+        os.system(f"{command}")
     input('\nPrem una tecla ...')
