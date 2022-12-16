@@ -41,13 +41,14 @@ def runExercici(num):
     print(f"{num}. {ESSENTIALS[num]['text']}")
 
     command = f"python {ESSENTIALS[num]['script']}"
+    arg = ''
 
     # si arguments
     if 'arguments' in ESSENTIALS[num]:
         if ESSENTIALS[num]['arguments']:
             print('Introdueix arguments: ')
-            arg = input(command + ' ')
-            os.system(f"{command} {arg}")
-    else:
-        os.system(f"{command}")
+            arg = ' '
+            arg += input(command + ' ')
+    
+    os.system(f"{command}{arg}")
     input('\nPrem una tecla ...')

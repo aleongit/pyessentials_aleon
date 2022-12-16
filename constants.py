@@ -20,6 +20,7 @@ CATEGORIES = [
     'Functions & 2D arrays',
     'Built-in Functions',
     'Command Line Arguments',
+    'Files',
 ]
 
 ESSENTIALS = {
@@ -731,6 +732,54 @@ Indica amb un print quin error ha comès l’usuari en cas que els arguments sig
         'title': "Arguments format data",
         'text': """Fes un programa en Python que accepta una data com a argument, en format dd/mm/aaaa, comprova que el format és correcte i ens retorna a quin dia de la setmana correspon.
 Podeu fer servir la biblioteca datetime.
+        """,
+    },
+    '161':  {
+        'script': 'py/161.py',
+        'arguments': False,
+        'category': CATEGORIES[15],
+        'title': "Crear fitxer",
+        'text': """Fes un programa que crei un fitxer de text de nom "text.txt" i escrigui tres línies de text al fitxer.
+Fes-lo usant les comandes open i close.
+Comprova que s'ha creat amb un editor de text, així sabràs on els guarda.
+        """,
+    },
+    '162':  {
+        'script': 'py/162.py',
+        'arguments': False,
+        'category': CATEGORIES[15],
+        'title': "Llegir fitxer",
+        'text': """Fes un programa que llegeixi el fitxer de text "text.txt" anterior i el mostri per pantalla.
+Fes-lo usant les comandes open i close.
+        """,
+    },
+    '163':  {
+        'script': 'py/163.py',
+        'arguments': False,
+        'category': CATEGORIES[15],
+        'title': "Afegir a fitxer",
+        'text': """Fes un programa que afegeixi una línia més al fitxer de text "text.txt" i el mostri per pantalla.
+Fes-lo usant les comandes open i close.
+Per poder afegir al fitxer cal obrir-lo en mode append i després per mostrar-lo cal tornar-lo a obrir en mode read.
+        """,
+    },
+    '164':  {
+        'script': 'py/164.py',
+        'arguments': False,
+        'category': CATEGORIES[15],
+        'title': "Fitxers amb with",
+        'text': """Modifica els 3 programes anterior usant la comanda with i no fent servir la comanda close.
+Posa tot el codi en un sol programa.
+        """,
+    },
+    '165':  {
+        'script': 'py/165.py',
+        'arguments': False,
+        'category': CATEGORIES[15],
+        'title': "Copiar fitxer",
+        'text': """Fes un programa que llegeixi del fitxer "text.txt" i escrigui el contingut en un fitxer nou de nom "text2.txt".
+Mostra en el mateix programa el contingut del fitxer "text2.txt" (l'hauràs de tornar a obrir ara en mode lectura).
+
         """,
     },
 }
