@@ -782,6 +782,54 @@ Mostra en el mateix programa el contingut del fitxer "text2.txt" (l'hauràs de t
 
         """,
     },
+    '166':  {
+        'script': 'py/166.py',
+        'arguments': False,
+        'category': CATEGORIES[15],
+        'title': "Crear fitxer amb les línies parells d'un altre",
+        'text': """Fes un programa que llegeixi del fitxer "text.txt" i escrigui les línies parells en un fitxer nou de nom "text3.txt".
+Mostra en el mateix programa el contingut del fitxer "text3.txt" (l'hauràs de tornar a obrir ara en mode lectura).
+        """,
+    },
+    '167':  {
+        'script': 'py/167.py',
+        'arguments': False,
+        'category': CATEGORIES[15],
+        'title': "Crear fitxer afegint . a totes les línies d'un altre",
+        'text': """Fes un programa que llegeixi del fitxer "text.txt", afegeixi un punt a totes les línies del fitxer "text.txt" i les escrigui en un fitxer nou de nom "text4.txt".
+Mostra en el mateix programa el contingut del fitxer "text4.txt" (l'hauràs de tornar a obrir ara en mode lectura).
+        """,
+    },
+    '168':  {
+        'script': 'py/168.py',
+        'arguments': False,
+        'category': CATEGORIES[15],
+        'title': "Crear fitxer a partir de dos altres fitxers",
+        'text': """Fes un programa que llegeixi del fitxer "text2.txt" i l'escrigui en un fitxer nou de nom "text5.txt".
+Després llegeixi del fitxer "text3.txt" i l'escrigui a continuació en el fitxer "text5.txt" (hi haurà tot el contingut del fitxer "text2.txt" i després tot el contingut del fitxer "text3.txt") .
+Mostra en el mateix programa el contingut del fitxer "text5.txt" (l'hauràs de tornar a obrir ara en mode lectura).
+        """,
+    },
+    '169':  {
+        'script': 'py/169.py',
+        'arguments': False,
+        'category': CATEGORIES[15],
+        'title': "Crear fitxer a partir de les línies parells i senars d'altres fitxers",
+        'text': """Fes un programa que llegeixi del fitxer "text2.txt" i escrigui en un fitxer nou de nom "text6.txt" només les línies parells.
+Després llegeixi del fitxer "text3.txt" i escrigui a continuació en el fitxer "text6.txt" només les línies senars.
+Mostra en el mateix programa el contingut del fitxer "text6.txt" (l'hauràs de tornar a obrir ara en mode lectura).
+        """,
+    },
+    '1610':  {
+        'script': 'py/1610.py',
+        'arguments': False,
+        'category': CATEGORIES[15],
+        'title': "Crear fitxer a partir d'alternar les línies d'altres fitxers",
+        'text': """Fes un programa que llegeixi del fitxer "text2.txt" i del fitxer "text3.txt" i escrigui en un fitxer nou de nom "text7.txt" alternadament línies d'un fitxer i de l'altre
+(compte: els 2 fitxers no tenen el matexi nombre de línies, un s'acabarà abans que l'altre).
+Mostra en el mateix programa el contingut del fitxer "text7.txt" (l'hauràs de tornar a obrir ara en mode lectura).
+        """,
+    },
 }
 
 # classes objecte ______________________________________________
