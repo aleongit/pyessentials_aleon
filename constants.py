@@ -830,6 +830,69 @@ Mostra en el mateix programa el contingut del fitxer "text6.txt" (l'hauràs de t
 Mostra en el mateix programa el contingut del fitxer "text7.txt" (l'hauràs de tornar a obrir ara en mode lectura).
         """,
     },
+    '1611':  {
+        'script': 'py/1611.py',
+        'arguments': False,
+        'category': CATEGORIES[15],
+        'title': "Saluda",
+        'text': """Crea un fitxer de text saluda.txt, amb python amb el contingut: "Bon dia CLASSE!!".  i tanca'l.
+Obre el fitxer anterior, i afegeix-li les següents frases, cadascuna en una línia diferent: 
+• Bona nit a tot@s !!!
+• Buff no puc dormir, potser que compti xaiets
+        """,
+    },
+    '1612':  {
+        'script': 'py/1612.py',
+        'arguments': False,
+        'category': CATEGORIES[15],
+        'title': "The fly song",
+        'text': """Donada la primera estrofa de "The fly song": 
+Una mosca volava per la llum
+i la llum es va apagar
+i la pobre mosca va quedar a les fosques
+i la pobre mosca no va poder volar.
+
+Crea un programa que escriu el fitxer the_fly_song.txt:
+
+Per crear la cançó cal escriure la primera estrofa.
+La segona estrofa és igual a la primera estrofa, però canviant les vocals per a. 
+La tercera estrofa és igual a la primera estrofa, però canviant les vocals per e, ...etc...
+
+Feu la funció retorna_substitucio(linia, una_vocal), que retorna una linia amb les vocals canviades per una_vocal.
+        """,
+    },
+    '1613':  {
+        'script': 'py/1613.py',
+        'arguments': False,
+        'category': CATEGORIES[15],
+        'title': "Castiga a Python",
+        'text': """Castiga a Python a escriure en un fitxer castiga.txt: 
+
+1. Faré totes les tasques de python perquè vull aprovar
+2. Faré totes les tasques de python perquè m’agrada programar
+3. Faré totes les tasques de python perquè vull aprovar
+2. Faré totes les tasques de python perquè m’agrada programar
+... 
+1000. Faré totes les tasques de python perquè m’agrada programar
+
+Utilitza una funció:
+ escriu_castig(cadena_castig1, cadena_castig2, vegades_q_escriu) 
+        """,
+    },
+    '1614':  {
+        'script': 'py/1614.py',
+        'arguments': False,
+        'category': CATEGORIES[15],
+        'title': "abecedari",
+        'text': """Crea un fitxer de text abece.txt, en python amb el contingut: 
+a
+bb
+ccc
+dddd
+...
+zzzzzzzzz...zz
+        """,
+    },
 }
 
 # classes objecte ______________________________________________
